@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while (true) {
+        let valor = prompt("cara, coroa ou sair?")
+        let sorteador =  Math.floor(Math.random() * 2)
+        let pontos = 0
+
+        if(valor === "sair"){
+            document.write("O jogo foi encerrado pelo usuário. Pontuação final: " + pontos + "<br>");
+            break;
+        }else if((valor === "cara" && sorteador === 0) || (valor === "coroa" && sorteador === 1)){
+            document.write("O resultado foi " + sorteador + ". Você ganhou!" + "<br>");
+            pontos++;
+        } else {
+        document.write("O resultado foi " + sorteador + ". Você perdeu!"+ "<br>");
+        pontos--; 
+  }
+ document.write("Pontuação atual: " + pontos) + "<br>";}
+    </script>
+</body>
+</html>

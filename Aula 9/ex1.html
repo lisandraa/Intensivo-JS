@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salario = Number(prompt("Insira o seu salário fixo:"))
+        let vendas = Number(prompt("Insira o seu valor de vendas:"))
+        
+        let comissao = (4/100) * vendas
+
+        document.write(`Sua comissão foi R$ ${comissao} <br>`)
+        document.write(`Seu salário final é R$ ${comissao + salario}`)
+    </script>
+</body>
+</html>

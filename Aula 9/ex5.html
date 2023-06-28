@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let valor = Number(prompt("Quanto custa o produto?"))
+        let codigo = Number(prompt("Qual a forma de pagamento? (1,2,3 ou 4)"))
+
+        let resultado = " "
+
+
+        if (codigo == 1){
+            resultado = valor - ((10/100) * valor)
+            document.write (`O total a ser pago é R$ ${resultado}`)
+        }else if (codigo == 2){
+            resultado = valor - ((5/100) * valor)
+            document.write (`O total a ser pago é R$ ${resultado}`)
+        }else if (codigo == 3){
+            resultado = valor
+            document.write (`O total a ser pago é R$ ${resultado}`)
+        }else if (codigo == 4){
+            resultado = valor + ((10/100) * valor)
+            document.write (`O total a ser pago é R$ ${resultado}`)
+
+        }
+    </script>
+</body>
+</html>

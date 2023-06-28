@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let conta = parseInt(prompt("Insira o número da conta"))
+        let saldo = parseInt(prompt("Insira o saldo inicial"))
+        let itens = parseInt(prompt("Insira o total de todos os itens cobrados nesse mês:"))
+        let credito = parseInt(prompt("Insira o total de crédito aplicado nesse mês:"))
+        let limite = parseInt(prompt("Insira o limite desse mês:"))
+
+        let novo_saldo = saldo + itens - credito
+
+        document.write(`O Novo saldo é ${novo_saldo}`)
+
+        if (novo_saldo> limite){
+            document.write("Limite de crédito excedido")
+        }
+    </script>
+</body>
+</html>

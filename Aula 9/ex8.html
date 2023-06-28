@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let quilometragemTotal = 0;
+        let litrosTotal = 0;
+        let viagens = 0;
+
+        while(true) {
+        let entrada = parseInt(prompt("Insira a quilometragem dirigida: (-1 para sair)"))
+        if (entrada === -1)
+    break;
+        let combustivel =parseInt(prompt("Insira a quantidade de combustível em L: (-1 para sair) "))
+
+        let consumo = entrada/combustivel
+
+        document.write(`Consumo: ${consumo.toFixed(2)} km/l <br>`);
+  
+  quilometragemTotal += entrada;
+  litrosTotal += combustivel;
+  viagens++;
+}
+
+if (viagens > 0) {
+  let consumoMedio = quilometragemTotal / litrosTotal;
+  let mediaQuilometragem = quilometragemTotal / viagens;
+  let mediaLitros = litrosTotal / viagens;
+  
+  document.write("Resumo das viagens: <br>");
+  document.write(`Quilometragem total: ${quilometragemTotal} km <br>`);
+  document.write(`Litros totais: ${litrosTotal} L`);
+  document.write(`Consumo médio: ${consumoMedio.toFixed(2)} km/l <br>`);
+  document.write(`Média da quilometragem das viagens: ${mediaQuilometragem.toFixed(2)} km <br>`);
+  document.write(`Média de litros das viagens: ${mediaLitros.toFixed(2)} L <br>`);
+} else {
+    document.write("Nenhuma viagem registrada.");
+}
+    </script>
+</body>
+</html>
