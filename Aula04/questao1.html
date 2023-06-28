@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let valor = prompt("Informe o valor em milímetros:")
+        let cm = valor/10
+        let dm = cm/10
+        let m = dm/10
+        let dam = m/10
+        let hm = dam/10
+        let km = hm/10
+
+        document.write (`O valor em milímeros inserido foi ${valor} <br>`)
+        document.write(`${valor}mm valem ${cm}cm <br>`)
+        document.write(`${cm}cm valem ${dm}dm <br>`)
+        document.write(`${dm}dm valem ${m}m <br>`)
+        document.write(`${m}m valem ${dam}dam <br>`)
+        document.write(`${dam}dam valem ${hm}hm <br>`)
+        document.write(`${hm}hm valem ${km}km <br>`)
+    </script>
+</body>
+</html>

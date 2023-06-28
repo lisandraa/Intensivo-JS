@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let peso = prompt("Informe o peso:") 
+       let altura = prompt("Informe a altura:")
+       
+       let imc = peso / (altura*altura)
+
+       document.write("Abaixo do peso?" + (imc < 18.5) + "<br>" )
+       document.write("Peso normal?" + (imc >= 18.5 && imc <= 24.9) + "<br>" )
+       document.write("Sobrepeso?" + (imc >= 25 && imc <= 29.9) + "<br>" ) 
+       document.write("Obesidade?" + (imc >= 30 && imc <35) + "<br>" ) 
+       document.write("Obesidade extrema?" + (imc >= 35) + "<br>" ) 
+    </script>
+</body>
+</html>

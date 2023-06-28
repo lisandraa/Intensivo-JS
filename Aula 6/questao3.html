@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("Informe o valor de a:"))
+        let b = Number(prompt("Informe o valor de b:"))
+        let c = Number(prompt("Informe o valor de c:"))
+
+        let delta = Math.pow(b, 2) - 4 * a * c
+
+        if(delta< 0){
+            document.write("Delta menor que 0. Portanto não existem raízes reais.")
+        } else {
+
+        let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            document.write ("x1=" + x1 + "e x2=" + x2)
+    }
+    </script>
+</body>
+</html>

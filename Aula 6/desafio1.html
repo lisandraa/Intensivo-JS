@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let idade1 = Number(prompt("Informe a idade 1:"))
+        let idade2 = Number(prompt("Informe a idade 2:"))
+        let idade3 = Number(prompt("Informe a idade 3:"))
+        let idade4 = Number(prompt("Informe a idade 4:"))
+        let idade5 = Number(prompt("Informe a idade 5:"))
+
+        if (idade1> idade2 && idade3 && idade4 && idade5){ 
+            document.write("Maior idade é " + idade1)
+        } else if (idade2> idade3 && idade4 && idade5 && idade1){
+            document.write("Maior idade é " + idade2)
+        } else if (idade3> idade1 && idade2 && idade4 && idade5){
+            document.write("Maior idade é " + idade3)
+        } else if (idade4> idade1 && idade2 && idade3 && idade5){
+            document.write("Maior idade é " + idade4)
+        }else if (idade5> idade1 && idade2 && idade3 && idade4){
+            document.write("Maior idade é " + idade5)
+        }
+
+    </script>
+</body>
+</html>
