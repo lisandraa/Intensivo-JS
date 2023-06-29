@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let notas= []
+            let soma = 0
+
+        for(let i = 0; i < 3; i++){
+            notas[i]=Number(prompt("Insira as notas dos alunos de 1 a 10"))
+            console.log(notas)
+        }
+        
+        for(let i = 0; i < notas.length; i++){
+        soma = soma + notas[i];
+}
+
+    let media = soma / notas.length
+document.write("Média: "+media)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //              0   1   2   3   4
+        let numeros = [10, 30, 50, 70, 90]
+        console.log(numeros)
+        console.log(numeros[0])
+        console.log(numeros[1])
+        numeros.push(110)//inserir um valor no final do array
+        console.log(numeros)
+        numeros.unshift(0)//inserir um valor no início do array
+        console.log(numeros)
+        numeros.pop()//retira o último elemento do array
+        console.log(numeros)
+        console.log(numeros.includes(10))//retorna true or false dependendo se o número está no array ou não
+        console.log(numeros.indexOf(50))//indica o índice do array(em que posição está ex 70=3 na ordem inicial)
+        console.log(...numeros)//desestruturação
+
+
+        let nomes = ["Miles", "Peter", "Gwen"]
+        for(let i = 0; i < nomes.length; i++){
+            console.log("oi "+nomes[i])
+        }
+
+        let gols = [3,4,0,2,1,2]
+        let soma = 0
+
+        for(let i = 0; i < gols.length; i++){
+            soma = soma + gols[i];
+        }
+        let media = soma / gols.length//numero de elementos dentro do array
+        document.write("Total de gols: "+soma)
+</script>
+</body>
+</html>
