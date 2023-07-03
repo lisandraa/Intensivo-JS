@@ -7,13 +7,14 @@
 </head>
 <body>
     <script>
-        function dobro(a){
-            return 2* a
+        function acao(a){
+            if (a % 2 == 0){
+                console.log(a +" é par")
+            }else{
+                console.log(a + " é ímpar")
+            }
         }
-
-        let resultado = dobro(23)
-        console.log(resultado)
-
+        acao(9)
     </script>
 </body>
 </html>
